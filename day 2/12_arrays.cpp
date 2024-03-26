@@ -9,7 +9,7 @@ void binary_search(int arr[], int size, int key)
     cout << endl;
     while (low <= high)
     {
-        int mid = ((low + high) / 2);
+        int mid = low+((high-low)/2);
         if (key > arr[mid])
         {
             low = mid;
