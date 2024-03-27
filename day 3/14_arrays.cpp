@@ -6,8 +6,8 @@ using namespace std;
 int firstOcc(vector<int> arr, int target)
 {
     int start = 0;
-    int end = arr.size();
-    int ans, mid = start + (end - start) / 2;
+    int end = arr.size() - 1;
+    int ans = -1, mid = start + (end - start) / 2;
     while (start <= end)
     {
         if (arr[mid] == target)
@@ -32,8 +32,8 @@ int firstOcc(vector<int> arr, int target)
 int lastOcc(vector<int> arr, int target)
 {
     int start = 0;
-    int end = arr.size();
-    int ans2, mid = start + (end - start) / 2;
+    int end = arr.size() - 1;
+    int ans2 = -1, mid = start + (end - start) / 2;
     while (start <= end)
     {
         if (arr[mid] == target)
