@@ -25,7 +25,7 @@ int noRepeat(string s)
 
 int main()
 {
-    string s = "pwwkew";
+    string s = "pwwfygyugyfvuygkew";
     int ans = noRepeat(s);
     cout << endl
          << ans << endl;

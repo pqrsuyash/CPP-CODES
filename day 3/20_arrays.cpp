@@ -11,7 +11,7 @@ vector<int> addToArrayForm(vector<int> &num, int k)
     {
         if (i >= 0)
         {
-            carry += num[i];
+            carry = carry + num[i];
         }
         answer.push_back(carry % 10);
         carry /= 10;
