@@ -10,15 +10,16 @@
     <div class="container">
         <h1>Level Crossing System</h1>
         <div class="input-section">
-            <label for="train-speed">Train Speed (km/h):</label>
-            <input type="number" id="train-speed" min="0">
-            <label for="train-length">Train Length (m):</label>
-            <input type="number" id="train-length" min="0">
-            <button onclick="calculateTime()">Calculate</button>
+            <label for="train-speed">Enter Train Speed (km/h):</label>
+            <input type="number" id="train-speed" min="0" placeholder="Enter train speed...">
+            <label for="train-length">Enter Train Length (m):</label>
+            <input type="number" id="train-length" min="0" placeholder="Enter train length...">
+            <button id="calculate-btn">Calculate</button>
         </div>
         <div class="output-section">
-            <h2>Gate Will Open Again At:</h2>
-            <p id="result"></p>
+            <div id="result"></div>
+            <div id="countdown"></div>
+            <div id="gate-animation">&#128274;</div>
         </div>
     </div>
     <script src="script.js"></script>
